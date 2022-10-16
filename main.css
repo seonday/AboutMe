@@ -1,0 +1,105 @@
+.messageBox {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.greetBox {
+  width: 100%;
+  margin: 130px 0 30px 0;
+}
+
+.textStyle p {
+  padding: 10px;
+  background-color: #efeff4;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.greetBox p:nth-child(1) {
+  width: 130px;
+}
+.greetBox p:nth-child(2) {
+  width: 250px;
+}
+
+.greetText {
+  width: 115px;
+}
+
+.faceImg {
+  width: 130px;
+  margin-bottom: none;
+}
+
+.QuestionBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textStyle_B p {
+  padding: 10px;
+  background-color: #0070fe;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+
+.aboutBox {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.aboutBox p {
+  width: 390px;
+}
+
+.studyBox p {
+  width: 280px;
+}
+
+.studyText {
+  width: 230px;
+}
+
+.html {
+  color: orange;
+}
+
+.css {
+  color: #0070fe;
+}
+
+.js {
+  color: rgb(255, 221, 0);
+}
+
+.react {
+  color: #4db1ff;
+}
+
+.goalBox p {
+  width: 250px;
+}
+
+.goalRef {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  background-color: #efeff4;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.goalBox img {
+  width: 100%;
+}
+
+.goalBox span {
+  font-size: 10px;
+}

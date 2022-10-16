@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;500;700&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#settingBox {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(239, 239, 244, 0.5);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #ceced2;
+  position: fixed;
+}
+
+.header {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.timeMode {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 20px;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.modeBox {
+  width: 50px;
+  height: 20px;
+  background-color: #ceced2;
+  border-radius: 10px;
+}
+
+.ball {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 2.5px;
+  box-shadow: 0.5px 0.5px 0.5px #8e8e93;
+}
+
+.profile {
+  margin: 0 auto;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  background-image: linear-gradient(#4db1ff, #0070fe);
+  border-radius: 50%;
+}
+
+.profile img {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.profile p {
+  color: #8e8e93;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.preBtn {
+  display: flex;
+  position: absolute;
+  top: 60px;
+}
+.preBtn a {
+  font-size: 14px;
+  color: white;
+}
+
+.preBtn span {
+  color: #0070fe;
+  margin-right: 5px;
+}
+
+.nextBtn {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 60px;
+  left: 980px;
+}
+
+.nextBtn a {
+  font-size: 14px;
+  color: white;
+}
+
+.nextBtn span {
+  color: #0070fe;
+  margin-left: 5px;
+}
+
+.circle {
+  width: 70px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: #0070fe;
+  color: white;
+  font-size: 5px;
+  text-align: center;
+  line-height: 27px;
+}
+
+#footer {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(239, 239, 244, 0.5);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid #ceced2;
+  text-align: center;
+  line-height: 70px;
+}
+
+.chatBar {
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #8e8e93;
+  padding: 10px;
+  font-size: 14px;
+}
