@@ -11,29 +11,31 @@
 </head>
 
 <body>
-  <script src="https://kit.fontawesome.com/5b0302b993.js" crossorigin="anonymous"></script>
-
   <header id='settingBox'>
     <div class='header'>
       <div class='timeMode'>
-        <span class='time'>오전 08:30</span>
-        <div class="profile">
-          <img src="./images/profile.png" alt="미모티콘" />
-          <p>Seonday &gt;</p>
-        </div>
-        <!-- light/night 모드 전환 -->
-        <div class="modeBox">
-          <div class='ball'></div>
+        <span id='time'></span>
+
+        <!-- light/dark 모드 전환 -->
+        <div class="darkmode">
+          <div class='modeBtn'></div>
         </div>
       </div>
 
-      <div class='preBtn'>
-        <span>&lt;</span>
-        <div class='circle'><a href="./index.html"> MAIN </a></div>
+      <div class="btnBox">
+        <div class='preBtn'>
+          <span>&lt;</span>
+          <div class='circle'><a href="./index.html"> MAIN </a></div>
+        </div>
+        <div class='nextBtn'>
+          <div class='circle'><a href="./contact.html"> CONTACT </a></div>
+          <span>&gt;</span>
+        </div>
       </div>
-      <div class='nextBtn'>
-        <div class='circle'><a href="./contact.html"> CONTACT </a></div>
-        <span>&gt;</span>
+
+      <div class="profile">
+        <img src="./images/profile.png" alt="미모티콘" />
+        <p>Seonday &gt;</p>
       </div>
     </div>
   </header>
@@ -106,6 +108,9 @@
     <input class='chatBar' type="text" placeholder='아직 준비가 덜 됐어요 😂'>
   </footer>
 
+  <!-- script -->
+  <script src="https://kit.fontawesome.com/5b0302b993.js" crossorigin="anonymous"></script>
+  <script src='./js/date.js'></script>
 </body>
 
 </html>
