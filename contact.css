@@ -22,15 +22,20 @@
 
 .Address {
   margin-top: 50px;
-  width: 40%;
+  width: 300px;
   display: flex;
   justify-content: space-between;
 }
 
 .icons {
-  padding: 15px;
+  padding: 30px 20px;
   background-color: #efeff4;
   border-radius: 10px;
   text-align: center;
   line-height: 50px;
+}
+
+.icons:hover {
+  background-color: #0070fe;
+  color: white;
 }

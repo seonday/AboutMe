@@ -10,19 +10,19 @@
   <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body id='darkmode'>
   <header id='settingBox'>
     <div class='header'>
       <div class='timeMode'>
         <span id='time'></span>
 
-        <!-- light/dark 모드 전환 -->
-        <div class="darkmode">
-          <div class='modeBtn'></div>
-        </div>
+        <input type="checkbox" id="toggle" hidden>
+        <label for="toggle" id="toggleSwitch">
+          <span id="toggleButton"></span>
+        </label>
       </div>
 
-      <div class="btnBox">
+      <div class='btnBox'>
         <div class='preBtn'>
           <span>&lt;</span>
           <div class='circle'><a href="./index.html"> MAIN </a></div>
@@ -33,7 +33,7 @@
         </div>
       </div>
 
-      <div class="profile">
+      <div class='profile'>
         <img src="./images/profile.png" alt="미모티콘" />
         <p>Seonday &gt;</p>
       </div>
@@ -43,64 +43,59 @@
   <section class='messageBox'>
     <!-- greeting -->
     <div class='greetBox textStyle'>
-      <p class='greetText'>좋은 아침이예요! ☀️ </p>
-      <p> ✋소통🤚하는 예비개발자 서혜선입니다!</p>
+      <span id='greetText'></span>
+      <span> ✋소통🤚하는 예비개발자 서혜선입니다!</span>
       <img class='faceImg' src="./images/greeting.png" alt="greeting" />
     </div>
 
     <div class='QuestionBox textStyle_B'>
-      <p class='textStyle_B'>반가워요 😊 간단하게 소개 해주세요!</p>
+      <span class='textStyle_B'>반가워요 😊 간단하게 소개 해주세요!</span>
     </div>
 
     <div class='aboutBox textStyle'>
-      <p>저는 디자인🎨을 전공했고, 작은 에이전시에서 1년정도 일을 했어요.</p>
+      <span>저는 디자인🎨을 전공했고, 작은 에이전시에서 1년정도 일을 했어요.</span>
       <img class='faceImg' src='./images/about.png' alt='about' />
-      <p>디자인 위에 기능을 구현해 보여주는
+      <span>디자인 위에 기능을 구현해 보여주는
         <b>✨프론트엔드✨</b>라는 직무가<br /> 매력적으로 느껴져
         공부를 시작했습니다!
-      </p>
+      </span>
     </div>
 
     <div class='QuestionBox textStyle_B'>
-      <p class='textStyle'>그렇다면 현재 직무를 위해서 어떤 것들을 공부하고 있나요?</p>
+      <span class='textStyle'>그렇다면 현재 직무를 위해 어떤 것들을 공부하고 있나요?</span>
     </div>
 
     <div class='studyBox textStyle'>
-      <p><b> <i class="fa-brands fa-html5 html "></i> HTML <i class="fa-brands fa-css3-alt css "></i>
+      <span><b> <i class="fa-brands fa-html5 html "></i> HTML <i class="fa-brands fa-css3-alt css "></i>
           CSS <i class="fa-brands fa-js js "></i> JavaScript <i class="fa-brands fa-react react "></i>
           React</b>를
-        <br />
-        공부하고 있어요!
-      </p>
-      <p>또 부족한 전공지식을 채우기 위해서 <br />
-        <b>CS 관련책📚</b>도 함께 읽고 있어요!
-      </p>
+        공부하고 있어요 !
+      </span>
+      <span>또 부족한 전공지식을 채우기 위해서
+        <b>CS📚</b>도 함께 공부하고 있어요 !
+      </span>
       <img class='faceImg' src='./images/study.png' alt='study' />
     </div>
 
     <div class='QuestionBox textStyle_B'>
-      <p class='textStyle'>프론트엔드가 된다면, 어떤 웹사이트를 만들고 싶나요?</p>
+      <span class='textStyle'>프론트엔드가 된다면, 어떤 웹사이트를 만들고 싶나요?</span>
     </div>
 
     <div class='goalBox textStyle'>
-      <p>저는 이런 웹사이트를 만들어 보고 싶어요!
-      </p>
-      <div class='goalRef'><b>DFY</b><br />
-        <span>디자인 웹 에이전시 홈페이지</span>
-        <a href="https://www.dfy.co.kr/" target='_blank'>
-          <img src='./images/goal_dfy.png' alt='goal_1'>
-        </a>
+      <span>저는 이런 웹사이트를 만들어 보고 싶어요!
+      </span>
+      <div class='goalRef'>
+        <p><b>DFY</b><br />디자인 웹 에이전시 홈페이지
+        </p>
+        <a href="https://www.dfy.co.kr/" target='_blank'><img src='./images/goal_dfy.png' alt='goal_1'></a>
       </div>
-      <div class='goalRef'><b>Noni Ceramica</b><br />
-        <span>모바일 참고용 웹사이트</span>
-        <a href="https://www.noniceramica.com/" target='_blank'>
-          <img src='./images/goal_nc.png' alt='goal_1'>
-        </a>
+      <div class='goalRef'>
+        <p><b>humana studio</b><br /> 모바일 참고용 웹사이트 </p>
+        <a href="https://www.humanastudio.com/" target='_blank'><img src='./images/goal_humana.png' alt='goal_2'></a>
       </div>
-      <img style='width: 120px; margin-bottom: none;' src="./images/bye.png" alt="bye">
-      <p>더 자세한 정보는 <b>🔔 CONTACT</b>에서
-        <br />확인할 수 있어요!
-      </p>
+      <img style='width: 130px; margin-bottom: none;' src="./images/bye.png" alt="bye">
+      <span>더 자세한 정보는 <b>🔔CONTACT🔔</b>에서<br /> 확인할 수 있어요!
+      </span>
     </div>
   </section>
 
@@ -111,6 +106,8 @@
   <!-- script -->
   <script src="https://kit.fontawesome.com/5b0302b993.js" crossorigin="anonymous"></script>
   <script src='./js/date.js'></script>
+  <script src='./js/greeting.js'></script>
+  <script src='./js/darkmode.js'></script>
 </body>
 
 </html>
