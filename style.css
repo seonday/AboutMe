@@ -56,9 +56,7 @@ li {
   cursor: pointer;
 }
 
-/* 토글 버튼 */
 #toggleSwitch #toggleButton {
-  /* 버튼은 토글보다 작아야함  */
   width: 1.3rem;
   height: 1.3rem;
   position: absolute;
@@ -69,13 +67,13 @@ li {
   background: white;
 }
 
-/* 체크박스가 체크될 시 변경되는 요소 */
+/* checked -> 변경되는 요소 */
 #toggle:checked ~ #toggleSwitch {
   background: #00d650;
 }
 
 #toggle:checked ~ #toggleSwitch #toggleButton {
-  /* 100% -> 끝위치, 2.8rem -> 버튼 크기 */
+  /* 100% -> 토글 이동할 위치, 1.5rem -> 버튼 크기 */
   left: calc(100% - 1.5rem);
   background: #fff;
 }
