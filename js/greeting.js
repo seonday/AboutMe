@@ -1,6 +1,4 @@
-const greet = document.getElementById('greetText');
 let greetComment = '기본 텍스트';
-console.log(hours);
 function greeting(hours) {
   if (hours < 12) {
     greetComment = `좋은 아침이네요 🌤️`;
@@ -13,4 +11,3 @@ function greeting(hours) {
   return;
 }
 greeting(hours);
-console.log(greeting());
